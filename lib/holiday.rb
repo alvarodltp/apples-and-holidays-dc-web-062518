@@ -23,7 +23,7 @@ end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash.each do |attribute, value|
-    if value == christmas && value == new_years
+    if attribute == winter
       value << "drinks"
     end
   end
